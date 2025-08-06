@@ -1,15 +1,24 @@
 {
-  "name": "skyblock-bot",
+  "name": "skyblock-discord-bot",
   "version": "1.0.0",
-  "description": "Discord bot to fetch Hypixel SkyBlock stats",
-  "main": "index.js",
-  "type": "module",
+  "description": "A Discord bot for Skyblock item listings with Hypixel integration",
+  "main": "bot.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
   },
+  "keywords": ["discord", "bot", "skyblock", "hypixel", "minecraft"],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
-    "discord.js": "^14.11.0",
-    "dotenv": "^16.3.1",
-    "node-fetch": "^3.3.1"
+    "discord.js": "^14.14.1",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
